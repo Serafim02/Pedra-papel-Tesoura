@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPT MINECRAFT</title>
+    <link rel="icon" type="image/png" href="img/Hollow.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="principal">
+        <h1 id="titulo">Pedra, Papel e Tesoura!</h1>
+        <div id="placar">
+            <div id="jogador">
+                <h2 id="jogadorNome">Jogador</h2>
+               
+                <ul id="jogadorEscolha">
+                    <li>
+                        <a id="jogadorEscolha1" onclick="jogar(1)">
+                            <img src="img/soul-pedra.webp" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a id="jogadorEscolha2" onclick="jogar(2)">
+                            <img src="img/Mascara-papel.webp">
+                        </a>
+                    </li>
+                    <li>
+                        <a id="jogadorEscolha3" onclick="jogar(3)">
+                            <img src="img/ferrao-tesoura.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contra">
+                <p id="jogadorPontos">0</p><div id="versus">VS</div> <p id="computadorPontos">0</p>
+            </div>
+            <div id="computador">
+                <h2 id="computadorNome">Computador</h2>
+               
+                <ul id="computadorEscolha">
+                    <li>
+                        <a id="computadorEscolha1">
+                            <img src="img/soul-pedra.webp" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a id="computadorEscolha2">
+                            <img src="img/Mascara-papel.webp" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a id="computadorEscolha3">
+                            <img src="img/ferrao-tesoura.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div> <!--DIV placar-->
+        <div id="mensagem"> &nbsp;</div>
+    </div> <!--DIV Principal-->
+
+    <script src="main.js"></script>
+</body>
+
+</html>
